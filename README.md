@@ -1,8 +1,7 @@
-Use this repository to start class for the lesson 6.1
+##### Version 1.0b
+  ###### Added Qr Code along with script to fetch the data, also added font-awesome to assets will continue to build.
+  ###### API https://goqr.me/api/doc/create-qr-code/
 
 
-The following packages will need to be installed to support the State-driven SPA using `npm install {package-name}`:
-html-literal
-parcel
-navigo (version 8)
-lodash
+##### Added Stampcardfrom.html for testing and scripts.js for testing
+  ###### Updated 07/25/23

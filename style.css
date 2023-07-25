@@ -1,11 +1,11 @@
- #jumbotron {
+ /* #jumbotron {
   background: url(assets/img/logo.jpg) center center no-repeat;  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 90vh;
-}
+} */
 
 /* #jumbotron > h2 {
   color: white;
@@ -37,11 +37,11 @@ form > input[type="submit"] {
   margin-right: auto;
 }
 
-footer {
+/* footer {
   border-top: solid 1px black;
   padding: 2rem 2rem 4rem;
   margin: 1rem 1rem;
-}
+} */
 
  #bio {
   margin: 1rem;
@@ -245,4 +245,9 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+#qrcode {
+  width:160px;
+  height:160px;
+  margin-top:15px;
 }
