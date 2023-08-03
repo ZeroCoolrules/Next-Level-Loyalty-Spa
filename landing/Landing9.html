@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title>Next Level Loyalty - Landing Page</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      .container{
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+      }
+      .logo{
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .stamp-card {
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        text-align: center;
+      }
+      .stamp-card h1{
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      .stamp-card p{
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      .stamp-card .stamp{
+        display: inline-block;
+        background-color: #ffcc00;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        margin: 8px;
+      }
+      .button{
+        display: inline-block;
+        background-color: #fc0;
+        color: #f5f5f5;
+        border-radius: 4px;
+        padding: 12px 24px;
+        text-decoration: none;
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">Next Level Loyalty</div>
+        <div class="stamp-count"></div>
+      </div>
+      <div class="stamp-card">
+        <h1>Congratulations</h1>
+        <p>You have 9 of 10 stamps needed to receive your reward.</p>
+        <div class="stamps">
+          <div class="stamp">1</div>
+          <div class="stamp">2</div>
+          <div class="stamp">3</div>
+          <div class="stamp">4</div>
+          <div class="stamp">5</div>
+          <div class="stamp">6</div>
+          <div class="stamp">7</div>
+          <div class="stamp">8</div>
+          <div class="stamp">9</div>
+        </div>
+        <a href="#" class="button">Claim Your Reward</a>
+      </div>
+    </div>
+  </body>
+<script src="stamps.js" type="module"></script>
+</html>

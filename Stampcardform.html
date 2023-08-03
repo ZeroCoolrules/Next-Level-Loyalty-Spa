@@ -25,10 +25,12 @@
         <button type="submit">Create</button>
     </form>
     <script>
+      //
       const stampCardForm = document.querySelector("#stamp-card-form");
-stampCardForm.addEventListener("submit", handleSubmit);
+      stampCardForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
+    console.log('handleSubmit()');
   event.preventDefault();
 
   const form = event.currentTarget;
@@ -43,7 +45,7 @@ function handleSubmit(event) {
 
   // Send the stamp card data to the server to generate a QR code
   const url =
-    "http(s)://api.qrserver.com/v1/create-qr-code/?data=[URL-encoded-text]&size=[200px]x[200px]";
+    `http(s)://api.qrserver.com/v1/create-qr-code/?data=[497aad20-2cc5-11ee-ac34-03b51c95ea9b]&size=[200px]x[200px]`;
   fetch(url, {
     method: "POST",
     headers: {
