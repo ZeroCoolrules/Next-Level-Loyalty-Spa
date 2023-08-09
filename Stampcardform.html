@@ -17,13 +17,14 @@
         <input type="text" id="reward-description" name="reward-description" required>
 
         <label for="number-of-stamps">Number of Stamps to Redeem</label>
-        <input type="number" id="number-of-stamps" name="number-of-stamps" min="1" required>
+        <input type="number" id="number-of-stamps" name="number-of-stamps" min="6" required>
 
         <label for="expires-after">Expires After (days)</label>
-        <input type="number" id="expires-after" name="expires-after" min="1" required>
+        <input type="number" id="expires-after" name="expires-after" min="366" required>
 
         <button type="submit">Create</button>
     </form>
+  <img />
     <script>
       //
       const stampCardForm = document.querySelector("#stamp-card-form");
@@ -45,8 +46,8 @@ function handleSubmit(event) {
 
   // Send the stamp card data to the server to generate a QR code
   const url =
-    `http(s)://api.qrserver.com/v1/create-qr-code/?data=[497aad20-2cc5-11ee-ac34-03b51c95ea9b]&size=[200px]x[200px]`;
-  fetch(url, {
+    `https://api.qrserver.com/v1/create-qr-code/?data=[497aad20-2cc5-11ee-ac34-03b51c95ea9b]&size=[200px]x[200px]`;
+  axios(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
